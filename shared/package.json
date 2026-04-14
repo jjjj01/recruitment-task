@@ -1,0 +1,10 @@
+{
+  "name": "@recruitment-task/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "types": "./index.ts"
+}

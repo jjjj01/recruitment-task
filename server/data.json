@@ -1,0 +1,43 @@
+{
+  "name": "root",
+  "type": "folder",
+  "children": [
+    {
+      "name": "src",
+      "type": "folder",
+      "children": [
+        {
+          "name": "index.ts",
+          "type": "file",
+          "size": 1024
+        },
+        {
+          "name": "App.tsx",
+          "type": "file",
+          "size": 2048
+        },
+        {
+          "name": "components",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Button.tsx",
+              "type": "file",
+              "size": 512
+            },
+            {
+              "name": "Modal.tsx",
+              "type": "file",
+              "size": 1536
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "package.json",
+      "type": "file",
+      "size": 800
+    }
+  ]
+}
