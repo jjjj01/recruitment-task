@@ -19,7 +19,7 @@ export const Details = () => {
   const status: DetailsStatus =
     !nodePath || !jsonData ? "INITIAL" : node ? "SUCCESS" : "ERROR";
 
-  if (!nodePath || status === "INITIAL") return null;
+  if (!nodePath) return null;
 
   return (
     <div className="min-h-screen">

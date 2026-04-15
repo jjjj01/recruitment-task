@@ -76,7 +76,7 @@ export const Tree = () => {
                 {searchResults?.length === 0 ? (
                   <p>No results found</p>
                 ) : (
-                  <div>
+                  <div className="max-h-300 overflow-y-auto overflow-x-hidden">
                     {searchResults.map((result) => (
                       <SearchResult {...result} />
                     ))}

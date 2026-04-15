@@ -3,6 +3,7 @@ import { MdFolder, MdFilePresent } from "react-icons/md";
 import { InfoField } from "./InfoField";
 import { getSize, getChildrenSizes } from "../../utils";
 import { FolderOrFile } from "@shared";
+import { OverflowScrollText } from "../../components/OverflowScrollText";
 
 interface FolderDetailsProps {
   data: Extract<FolderOrFile, { type: "folder" }>;
@@ -18,11 +19,13 @@ export const FolderDetails = ({ data, path }: FolderDetailsProps) => {
         <span className="text-4xl text-amber-500">
           <MdFolder />
         </span>
-        <div>
+        <div className="max-w-180 flex flex-col group">
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
             Folder
           </h1>
-          <p className="text-zinc-500 dark:text-zinc-400">{path}</p>
+          <OverflowScrollText className="text-zinc-500 dark:text-zinc-400">
+            {path}
+          </OverflowScrollText>
         </div>
       </div>
       <div className="grid gap-4 mb-6">
